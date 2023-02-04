@@ -78,3 +78,40 @@ $ docker-compose up -d # background
 ```
 
 
+# Prisma
+Create two database tables with Prisma Migrate#
+
+ ```bash
+
+model User {
+  id    Int     @default(autoincrement()) @id
+  email String  @unique
+  name  String?
+  posts Post[]
+}
+
+model Post {
+  id        Int      @default(autoincrement()) @id
+  title     String
+  content   String?
+  published Boolean? @default(false)
+  author    User?    @relation(fields: [authorId], references: [id])
+  authorId  Int?
+}
+```
+
+Run the following commands in your terminal:
+
+ ```bash
+$ npx prisma migrate dev --name init
+```
+
+
+Install and generate Prisma Client#
+Prisma Client is a type-safe database client that's generated from your Prisma model definition. Because of this approach, Prisma Client can expose CRUD operations that are tailored specifically to your models.
+
+To install Prisma Client in your project, run the following command in your terminal:
+
+ ```bash
+$ npm install @prisma/client
+ ```
