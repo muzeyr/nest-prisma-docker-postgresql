@@ -56,20 +56,25 @@ $ npm run test:e2e
 
 # test coverage
 $ npm run test:cov
+
+$ cp .env.example .env
 ```
 
 ## Docker File
 Get started by running
 
 ```bash
-docker build -t nest-api .
+$ docker build -t backend-nest-api .
 
-docker run -p 3000:3000 --env-file .env -d nest-api
+$ docker run -p 3000:3000 --env-file .env -d backend-nest-api
 ```
 
 ### Docker Compose
 
+ ```bash
+$ docker-compose up 
+
+$ docker-compose up -d # background
 ```
-docker-compose up 
-docker-compose up -d # background
-```
+
+
