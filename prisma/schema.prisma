@@ -12,6 +12,9 @@ model User {
   email String  @unique
   name  String?
   posts Post[]
+  products Product[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now())
 }
 
 model Post {
@@ -21,5 +24,28 @@ model Post {
   published Boolean? @default(false)
   author    User?    @relation(fields: [authorId], references: [id])
   authorId  Int?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now())
 }
 
+model Product {
+  id         Int      @default(autoincrement()) @id
+  title      String
+  price      Float
+  categories Category[]
+  image      String?
+  published  Boolean? @default(false)
+  author     User?    @relation(fields: [authorId], references: [id])
+  authorId   Int?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now())
+}
+
+
+model Category {
+  id        Int      @default(autoincrement()) @id
+  title     String
+  products  Product[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now())
+}
