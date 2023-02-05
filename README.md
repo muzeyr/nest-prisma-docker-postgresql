@@ -118,7 +118,7 @@ $ nest g -c nestjs-prisma-crud-schematics crud-resource post
 
 ![Create User](./user_create.png "Create User postman collection ss")
 
-![Category Create](./category_create.png "Category Create postman collection ss")
+![Category Create](./category_list.png "Category Create postman collection ss")
 
 ![Category List](./category_list.png "Category List postman collection ss")
 
