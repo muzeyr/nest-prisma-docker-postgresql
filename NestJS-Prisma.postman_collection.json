@@ -1,0 +1,247 @@
+{
+	"info": {
+		"_postman_id": "49fbb060-7e74-40fe-965f-f00b6325889c",
+		"name": "NestJS-Prisma",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19687258"
+	},
+	"item": [
+		{
+			"name": "User Create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwNTYwYWM0NS0zZjRhLTQ0ZDQtYmVlNi04ODY0NTMzZDAzMWUiLCJjb21ldFRva2VuIjpudWxsLCJpYXQiOjE2NjY1NDgzMzMsImV4cCI6MTkzODg4NzcwNTU1LCJhdWQiOiJodHRwczovL3pjbnRlY2guY29tIiwiaXNzIjoiemNuIn0.qjuLe-bTd9pEjERNQEOxJ5DC6I2Tn1uVQheLCRR6Shc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"uzi ozcan\",\n    \"email\":\"muzeyr+3@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwNTYwYWM0NS0zZjRhLTQ0ZDQtYmVlNi04ODY0NTMzZDAzMWUiLCJjb21ldFRva2VuIjpudWxsLCJpYXQiOjE2NjY1NDgzMzMsImV4cCI6MTkzODg4NzcwNTU1LCJhdWQiOiJodHRwczovL3pjbnRlY2guY29tIiwiaXNzIjoiemNuIn0.qjuLe-bTd9pEjERNQEOxJ5DC6I2Tn1uVQheLCRR6Shc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Category Create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwNTYwYWM0NS0zZjRhLTQ0ZDQtYmVlNi04ODY0NTMzZDAzMWUiLCJjb21ldFRva2VuIjpudWxsLCJpYXQiOjE2NjY1NDgzMzMsImV4cCI6MTkzODg4NzcwNTU1LCJhdWQiOiJodHRwczovL3pjbnRlY2guY29tIiwiaXNzIjoiemNuIn0.qjuLe-bTd9pEjERNQEOxJ5DC6I2Tn1uVQheLCRR6Shc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Health & Wellness\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/category",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Categories",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwNTYwYWM0NS0zZjRhLTQ0ZDQtYmVlNi04ODY0NTMzZDAzMWUiLCJjb21ldFRva2VuIjpudWxsLCJpYXQiOjE2NjY1NDgzMzMsImV4cCI6MTkzODg4NzcwNTU1LCJhdWQiOiJodHRwczovL3pjbnRlY2guY29tIiwiaXNzIjoiemNuIn0.qjuLe-bTd9pEjERNQEOxJ5DC6I2Tn1uVQheLCRR6Shc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/category",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product Create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwNTYwYWM0NS0zZjRhLTQ0ZDQtYmVlNi04ODY0NTMzZDAzMWUiLCJjb21ldFRva2VuIjpudWxsLCJpYXQiOjE2NjY1NDgzMzMsImV4cCI6MTkzODg4NzcwNTU1LCJhdWQiOiJodHRwczovL3pjbnRlY2guY29tIiwiaXNzIjoiemNuIn0.qjuLe-bTd9pEjERNQEOxJ5DC6I2Tn1uVQheLCRR6Shc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Product -99\",\n    \"price\":10.4,\n    \"published\": true,\n    \"authorId\":7,\n    \"categoryIds\":[1,2,3]\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Products",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwNTYwYWM0NS0zZjRhLTQ0ZDQtYmVlNi04ODY0NTMzZDAzMWUiLCJjb21ldFRva2VuIjpudWxsLCJpYXQiOjE2NjY1NDgzMzMsImV4cCI6MTkzODg4NzcwNTU1LCJhdWQiOiJodHRwczovL3pjbnRlY2guY29tIiwiaXNzIjoiemNuIn0.qjuLe-bTd9pEjERNQEOxJ5DC6I2Tn1uVQheLCRR6Shc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -115,3 +115,9 @@ To install Prisma Client in your project, run the following command in your term
  ```bash
 $ npm install @prisma/client
  ```
+
+CRUD module and endpoints (replace post with your model's name):
+
+ ```bash
+$ nest g -c nestjs-prisma-crud-schematics crud-resource post
+ ```
