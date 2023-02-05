@@ -8,6 +8,10 @@
   <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
     <p align="center">
 
+NestJS application with integrated Prisma ORM for managing user, product, and category models using PostgreSQL as the database. To save time on CRUD operations, I used the npm library, nestjs-prisma-crud (https://kepelrs.github.io/nestjs-prisma-crud/). I also included a Postman collection, making testing the API even easier. Deployment is made simple with Docker, making it easy to run the project with just a few commands. As I noticed a lack of examples for relational models, I created this repository to showcase the implementation. Feel free to check it out and let me know your thoughts!
+
+  ! #NestJS #Prisma #RelationalModels #WebDevelopment #nestjs-prisma-crud #Postman #PostgreSQL #Docker
+
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
